@@ -1,20 +1,8 @@
 # ecommerce_data_platform
 
-```plaintext
-                                      +---------------------------------+
-                               +----->|   Spark Streaming Job           |-----> [ MongoDB ]
-                               |      | (frontend-events işleme)        |      (Kullanıcı Etkileşim Profilleri)
-                               |      +---------------------------------+
-[Owl Shop Aracı] -> [Apache Kafka Konuları]
-(Veri Üretimi)     (Merkezi Sinir Sistemi)
-                               |      +---------------------------------+
-                               +----->|   Spark Batch Job               |-----> [ Data Lake (Parquet) ]
-                                      | (orders, customers işleme)      |      (Tarihsel Analiz Deposu)
-                                      |   (Orchestrated by Airflow)     |
-                                      +---------------------------------+
+![Workflow image](images/workflow.svg)
 
-```
-/div
+---
 ```plaintext
 ecommerce_data_platform/
 ├── dags/ # Airflow DAG dosyalarımız burada yaşayacak
