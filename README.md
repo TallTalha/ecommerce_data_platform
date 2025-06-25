@@ -1,6 +1,6 @@
 # ecommerce_data_platform
 
-![Workflow image](images/workflow.svg)
+![Workflow image](images/Workflow.svg)
 
 ---
 ```plaintext
